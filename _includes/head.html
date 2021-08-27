@@ -9,7 +9,7 @@
 {% else %}
   {{ site.title }}
 {% endif %}
-{% if page.simple_title != "blank" and page.url != "/" %}
+{% if page.simple_title != nil and page.url != "/" %}
   | {{ page.simple_title }}
 {% elsif page.title != "blank" and page.url != "/" %}
   | {{ page.title }}
