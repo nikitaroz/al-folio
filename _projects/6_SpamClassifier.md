@@ -25,7 +25,7 @@ I chose a linear model in `XGBoost` as the classifier because its coefficients c
 
 <img class="img-responsive mx-auto d-block" style="width: 40%" src="{{ '/assets/img/SpamClassifier-preview.png' | absolute_url }}" alt="SpamClassifier website preview">
 
-The [SpamClassifier](http://www.myspamclassifier.com) website contains a searchable database of keywords and emails. For the frontend, I used a combination of `Bootstrap`, `d3`, and `jQuery`. The backend relies on `sqlite` to store the emails and model information as well as `flask` handle requests and serve content. The searching functionality of the website is done through the `sqlite` full text search utility. All the code and the database is combined into a single `Docker` image and deployed on AWS with Elastic Beanstalk.
+The SpamClassifier website contained a searchable database of keywords and emails. For the frontend, I used a combination of `Bootstrap`, `d3`, and `jQuery`. The backend relies on `sqlite` to store the emails and model information as well as `flask` handle requests and serve content. The searching functionality of the website is done through the `sqlite` full text search utility. All the code and the database is combined into a single `Docker` image and deployed on AWS with Elastic Beanstalk.
 
 # Results
 The classifier has a 98.9% accuracy when tested on 20% of the dataset (only 80% of the dataset was used during training). When using 5-fold cross-validation on the training set, the classifier had an out-of-fold average accuracy of 98.1%. This is a significant improvement over 74% accuracy achieved for a classifier that naively categorizes all emails as normal. Below is a wordcloud of some of some of the most significant words in the classifier.
