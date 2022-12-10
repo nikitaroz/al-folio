@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Process Engineer at Intel Corporation 
+description: System Development Engineer at Amazon.com
 
 profile:
   align: right

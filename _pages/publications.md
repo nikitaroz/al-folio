@@ -6,7 +6,7 @@ description:
 nav: true
 
 ---
-
+<!-- _pages/publications.md -->
 <div class="publications">
 <h1>Peer-Reviewed Publications</h1>
 {% bibliography -f papers %}
